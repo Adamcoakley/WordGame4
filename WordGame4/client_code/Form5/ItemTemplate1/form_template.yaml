@@ -1,0 +1,31 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{"DYOLNC":15,"CFPMEE":5,"DRQFUJ":10,"RJBTDS":30}'}
+components:
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {grid_position: 'OMFOMB,DYOLNC'}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''name'']'}
+- type: Label
+  properties: {}
+  name: label_2
+  layout_properties: {grid_position: 'OMFOMB,CFPMEE'}
+  data_bindings:
+  - {property: text, code: 'self.item[''seconds'']'}
+- type: Label
+  properties: {}
+  name: label_3
+  layout_properties: {grid_position: 'OMFOMB,DRQFUJ'}
+  data_bindings:
+  - {property: text, code: 'self.item[''sourceword'']'}
+- type: Label
+  properties: {}
+  name: label_4
+  layout_properties: {grid_position: 'OMFOMB,RJBTDS'}
+  data_bindings:
+  - {property: text, code: 'self.item[''matches'']'}
+is_package: true
+item_type: {table_id: 108183}

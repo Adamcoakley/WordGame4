@@ -1,0 +1,32 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{"QEDTMM":15,"IGIQWU":5,"EZTHGE":10,"NQNGRB":30}'}
+  data_bindings:
+  - {property: spacing_above, code: 'self.item[''name'']'}
+components:
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {grid_position: 'RDQLED,QEDTMM'}
+  data_bindings:
+  - {property: text, code: 'self.item[''name'']'}
+- type: Label
+  properties: {}
+  name: label_2
+  layout_properties: {grid_position: 'RDQLED,IGIQWU'}
+  data_bindings:
+  - {property: text, code: 'self.item[''seconds'']'}
+- type: Label
+  properties: {}
+  name: label_3
+  layout_properties: {grid_position: 'RDQLED,EZTHGE'}
+  data_bindings:
+  - {property: text, code: 'self.item[''sourceword'']'}
+- type: Label
+  properties: {}
+  name: label_4
+  layout_properties: {grid_position: 'RDQLED,NQNGRB'}
+  data_bindings:
+  - {property: text, code: 'self.item[''matches'']'}
+is_package: true
+item_type: {table_id: 108183}
